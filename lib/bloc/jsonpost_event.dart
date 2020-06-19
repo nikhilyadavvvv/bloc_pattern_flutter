@@ -13,3 +13,15 @@ class GetPost extends JsonpostEvent {
   // TODO: implement props
   List<Object> get props => [title,body];
 }
+
+class GetUsers extends JsonpostEvent {
+  @override
+  // TODO: implement props
+  List<Object> get props => [];
+}
+
+class ResetUI extends JsonpostEvent {
+  @override
+  // TODO: implement props
+  List<Object> get props => [];
+}

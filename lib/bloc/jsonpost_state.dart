@@ -23,3 +23,13 @@ class JsonpostLoaded extends JsonpostState {
   // TODO: implement props
   List<Object> get props => [];
 }
+
+class UsersLoaded extends JsonpostState {
+
+  final Users users;
+  const UsersLoaded(this.users);
+  @override
+  // TODO: implement props
+  List<Object> get props => [users];
+  
+}
