@@ -18,10 +18,8 @@ class PostRepository {
         body: send_it); // check the status code for the result
     int statusCode = response.statusCode;
     String body = response.body;
-    print(body);
     Map postMap = jsonDecode(body);
     var postREP = UserCreated.fromJson(postMap);
-    print(postREP);
     return postREP;
   }
 
@@ -34,7 +32,6 @@ class PostRepository {
     String body = response.body;
     Map postMap = jsonDecode(body);
     var postREP = Users.fromJson(postMap);
-    print(postREP);
     return postREP;
   }
 }
